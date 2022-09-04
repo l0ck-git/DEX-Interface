@@ -1,0 +1,245 @@
+.content {
+  position: relative;
+  margin: 50px auto 0 auto;
+  border-radius: 30px;
+  background-color: var(--color2);
+  height: 400px;
+  width: 360px;
+}
+
+.header_swap {
+  position: absolute;
+  margin: 20px 10px 0 10px;
+  width: 340px;
+}
+
+.header_swap p {
+  width: 80px;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.header_swap i {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  font-size: 2rem;
+  transition: 1s;
+  transform: rotate(0deg);
+}
+
+.header_swap i:hover {
+  color: var(--color1);
+  transform: rotate(360deg);
+}
+
+.firstblock {
+  position: absolute;
+  width: 340px;
+  height: 100px;
+  margin: 80px 10px 0 10px;
+  border-radius: 20px;
+  background: var(--color1);
+}
+
+.firstblock input {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 120px;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  margin: 0 10px 0 0;
+  -moz-appearance: textfield;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: black;
+  text-align: end;
+}
+.firstblock input::-webkit-inner-spin-button {
+  display: none;
+}
+.firstblock input:hover {
+  border: none;
+  outline: none;
+}
+.firstblock .token {
+  background-color: rgb(1, 234, 239, 0.3);
+  padding-right: 10px;
+  height: 40px;
+  border-radius: 20px;
+  position: absolute;
+  top: 15%;
+  left: 0;
+  margin-left: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.firstblock .token:hover {
+  background-color: var(--color3);
+}
+
+.firstblock .token .buttonText {
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-left: 40px;
+}
+.firstblock .token .buttonText::after {
+  content: '';
+  display: inline-block;
+  margin-left: 15px;
+  margin-bottom: 3px;
+  height: 10px;
+  width: 10px;
+  border-bottom: 3px solid black;
+  border-right: 3px solid black;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.firstblock .token img {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  margin-left: 10px;
+  height: 20px;
+  width: 20px;
+}
+.firstblock .balance {
+  position: absolute;
+  max-width: 100px;
+  overflow: hidden;
+  bottom: 10%;
+  left: 0%;
+  margin: 0 20px;
+  font-weight: bold;
+  font-size: 0.875rem;
+}
+
+.secondblock {
+  position: absolute;
+  top: 45%;
+  width: 340px;
+  margin: 10px 10px 0 10px;
+  height: 100px;
+  border-radius: 20px;
+  background: var(--color1);
+}
+.secondblock input {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  width: 120px;
+  margin: 0 10px 0 0;
+  -moz-appearance: textfield;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-weight: bold;
+  font-size: 1.625rem;
+  color: black;
+  text-align: end;
+}
+.secondblock input::-webkit-inner-spin-button {
+  display: none;
+}
+.secondblock input:hover {
+  border: none;
+  outline: none;
+}
+.secondblock .token {
+  background-color: rgb(1, 234, 239, 0.3);
+  padding-right: 10px;
+  height: 40px;
+  border-radius: 20px;
+  position: absolute;
+  top: 15%;
+  left: 0;
+  padding: 0 10px;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  margin-left: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.secondblock .token:hover {
+  background-color: var(--color3);
+}
+
+.secondblock .token .buttonText {
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-left: 30px;
+}
+.secondblock .token .buttonText::after {
+  content: '';
+  display: inline-block;
+  margin-left: 15px;
+  margin-bottom: 3px;
+  height: 10px;
+  width: 10px;
+  border-bottom: 3px solid black;
+  border-right: 3px solid black;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.secondblock .token img {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  height: 20px;
+  width: 20px;
+  margin-left: 10px;
+}
+.secondblock .balance {
+  position: absolute;
+  bottom: 10%;
+  left: 0%;
+  width: 200px;
+  margin: 0 20px;
+  font-weight: bold;
+  font-size: 0.875rem;
+}
+
+.content button {
+  position: absolute;
+  bottom: 0;
+  width: 300px;
+  height: 50px;
+  margin: 0 25px 30px 25px;
+  border-radius: 20px;
+  background: var(--color1);
+  transition: 0.2s;
+}
+
+.content button p {
+  font-size: 1.25rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.content button:hover {
+  background-color: var(--color3);
+}
+
+.valueOf {
+  position: absolute;
+  bottom: 85px;
+  left: 30px;
+  font-weight: 600;
+  font-size: 0.8rem;
+}

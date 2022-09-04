@@ -1,0 +1,54 @@
+.headerPools {
+  width: 600px;
+  height: 60px;
+  padding: 0 30px;
+  border-radius: 30px;
+  margin: 20px auto;
+  background-color: var(--color2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.headerPools > button {
+  display: inline;
+  width: 110px;
+  border-radius: 20px;
+  background: var(--color1);
+  transition: 0.2s;
+  cursor: pointer;
+  font-size: 0.9rem;
+  padding: 5px;
+  font-weight: 600;
+}
+
+.headerPools > button:hover {
+  background-color: var(--color3);
+}
+
+.poolInfo {
+  width: 600px;
+  height: 300px;
+  border-radius: 30px;
+  background-color: var(--color2);
+  margin: 20px auto;
+  display: grid;
+  place-content: center;
+}
+
+.poolInfo > button {
+  margin-top: 20px;
+  width: 220px;
+  justify-self: center;
+  border-radius: 20px;
+  background: var(--color1);
+  transition: 0.2s;
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 5px;
+  font-weight: 600;
+}
+
+.poolInfo > button:hover {
+  background-color: var(--color3);
+}

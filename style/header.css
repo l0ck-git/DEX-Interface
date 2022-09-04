@@ -1,0 +1,72 @@
+header {
+  display: grid;
+  grid-template-columns: 160px 1fr 160px;
+  height: 60px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.header_img img {
+  width: 50px;
+  height: 40px;
+  margin: 10px 0 0 10px;
+}
+
+.nav_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: center;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 12px;
+  background-color: var(--color2);
+  padding: 3px;
+  font-weight: 600;
+}
+
+.nav_list_item {
+  padding: 5px 10px;
+  margin: 0 5px;
+  text-decoration: none;
+  color: black;
+}
+
+.nav_list_item:hover {
+  background-color: var(--color1);
+  color: white;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.active_item {
+  background-color: var(--color1);
+  border-radius: 12px;
+  color: white;
+}
+
+.wallet {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  border-radius: 12px;
+  background: var(--color2);
+  cursor: pointer;
+  padding: 5px 10px;
+  font-weight: bold;
+  height: 34px;
+  transition: 0.2s;
+}
+
+.wallet:hover {
+  background-color: var(--color3);
+}
